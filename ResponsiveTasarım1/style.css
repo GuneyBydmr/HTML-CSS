@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width: 50px;
+  cursor: pointer;
+  margin: 30px 0;
+  transition: transform 0.5s;
+}
+.logo:hover{
+  transform: translateY(30px);
+}
+.menu-icon{
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color:black;
+  font-size: 16px;
+  font-weight: bold;
+}
+nav ul li a:hover{
+  color:Red;
+}
+.row{
+  display: flex;
+  align-items:center;
+  margin: 100px 0;
+}
+.col-1{
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+.col-1 h2{
+  font-size: 40px;
+}
+.col-1 h3{
+  font-size: 20px;
+  margin: 20px 0 10px;
+}
+.col-1 p{
+  margin-top: 15px;
+}
+.col-1 h4{
+  margin-top:15px;
+  margin-bottom: 15px;
+}
+button{
+  width: 160px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color:#fff;
+  background-color: red;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.5s
+}
+button img{
+  width: 30px;
+  display: none;
+  transition: transform 0.5s;
+}
+button:hover{
+  transform: translateX(40px);
+  background-color: green;
+}
+.col-2{
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+.controller{
+width: 90%;
+}
+.social-media img{
+  height: 20px;
+  cursor: pointer;
+  margin: 20px;
+  transition: transform 0.5s;
+}
+.social-media img:hover{
+  transform: translateY(20px);
+}
+.social-media{
+  text-align: center;
+}
+@media only screen and (max-width:700px)
+{
+  nav ul {
+    width: 100%;
+    background: linear-gradient(#ff54a2,#ff575a);
+    position: absolute;
+    top:75px;
+    right: 0;
+    z-index: 2;
+  }
+  nav ul li{
+    display: block;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a{
+    color:white;
+  }
+  nav ul li a:hover{
+    color:white;
+  }
+  .menu-icon{
+    display: block;
+  }
+  #menulist{
+    transition: 0.5s;
+  }
+}
+@media only screen and (max-width:1600px)
+{
+  nav ul {
+    width: 100%;
+    background: linear-gradient(#ff54a2,#ff575a);
+    position: absolute;
+    top:75px;
+    right: 0;
+    z-index: 2;
+  }
+  nav ul li{
+    display: block;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a{
+    color:white;
+  }
+  nav ul li a:hover{
+    color:white;
+  }
+  .menu-icon{
+    display: block;
+  }
+  #menulist{
+    transition: 0.5s;
+  }
+}

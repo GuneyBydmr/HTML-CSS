@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <title>PLAYSTATION</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="img/logo.png">
+  </head>
+  <body>
+  <div class="container">
+  <div class="navbar">
+  <img src="img/logo.png" class="logo">
+  <nav>
+    <ul id="menulist">
+      <li><a href="#">Oyun Denetleyicileri</a></li>
+      <li><a href="#">Vr Aksesuarları</a></li>
+      <li><a href="#">Medya Uzaktan Kumandaları</a></li>
+      <li><a href="#">Diğerleri</a></li>
+    </ul>
+  </nav>
+  <img src="img/menu.png" class="menu-icon" onclick="tooglemenu()">
+  </div>
+  <div class="row">
+    <div class="col-1">
+    <h2>PS4 V2<br>Dualshock 4</h2>
+    <h3>Playstation 4 için kablosuz kumanda</h3>
+    <p>(Uyumlu/Genel)</p>
+    <h4>$32.50</h4>
+    <button type="button">Satın Al</button>
+    </div>
+    <div class="col-2">
+    <img src="img/controller.png" class="controller">
+    </div>
+  </div>
+  <div class="social-media">
+    <img src="img/fb.png">
+    <img src="img/tw.png">
+    <img src="img/ig.png">
+  </div>
+  </div>
+  <script type="text/javascript">
+    var menuList=document.getElementById("menulist");
+    menulist.style.maxHeight="0px";
+    function tooglemenu()
+    {
+      if (menulist.style.maxHeight=="0px")
+      {
+        menulist.style.maxHeight="130px";
+      }
+      else
+      {
+        menulist.style.maxHeight="0px";
+      }
+    }
+  </script>
+  </body>
+</html>
